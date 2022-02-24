@@ -1,0 +1,166 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+a {
+    color: white;
+}
+h1,
+h2 {
+    color: white;
+}
+p {
+    color: white;
+}
+
+@media screen and (min-width: 1024px) {
+    footer {
+        padding-top: 30px;
+        width: 100%;
+        background-color: #222;
+        font-size: 0.8em;
+    }
+    .personal {
+        text-align: right;
+        padding: 10px;
+        border-bottom: 1px solid #222;
+        border-top: 1px solid #222;
+    }
+    .personal a {
+        padding-right: 10px;
+    }
+    .secondfooter {
+        width: 60%;
+        padding-top: 20px;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .social a {
+        padding-bottom: 5px;
+        display: block;
+    }
+
+    .customer p {
+        padding-bottom: 5px;
+    }
+    .company {
+        text-align: left;
+    }
+    .company p {
+        padding-bottom: 5px;
+    }
+    .copyright {
+        text-align: center;
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    footer {
+        padding-top: 30px;
+        width: 100%;
+        background-color: #222;
+        font-size: 0.7em;
+    }
+    .personal {
+        text-align: right;
+        padding: 10px;
+        border-bottom: 1px solid #222;
+        border-top: 1px solid #222;
+        height: 10%;
+    }
+    .personal a {
+        padding-right: 10px;
+    }
+    .secondfooter {
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: left;
+    }
+    .social {
+        width: 40%;
+    }
+    .social a {
+        padding-bottom: 5px;
+        display: block;
+    }
+    .customer {
+        width: 40%;
+    }
+    .customer p {
+        padding-bottom: 5px;
+    }
+    .company {
+        padding-top: 10px;
+        margin: auto;
+        width: 80%;
+        text-align: left;
+    }
+    .company p {
+        padding-bottom: 5px;
+    }
+    .copyright {
+        text-align: center;
+        padding: 30px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+    footer {
+        padding-top: 30px;
+        width: 100%;
+        background-color: #222;
+        font-size: 0.7em;
+    }
+    .personal {
+        text-align: right;
+        padding: 10px;
+        border-bottom: 1px solid #222;
+        border-top: 1px solid #222;
+        height: 10%;
+    }
+    .personal a {
+        padding-right: 10px;
+    }
+    .secondfooter {
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: left;
+    }
+    .social {
+        width: 40%;
+    }
+    .social a {
+        padding-bottom: 5px;
+        display: block;
+    }
+    .customer {
+        width: 40%;
+    }
+    .customer p {
+        padding-bottom: 5px;
+    }
+    .company {
+        padding-top: 10px;
+        margin: auto;
+        width: 80%;
+        text-align: left;
+    }
+    .company p {
+        padding-bottom: 5px;
+    }
+    .copyright {
+        text-align: center;
+        padding: 30px;
+    }
+}

@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    color: white;
+}
+h1,
+h2 {
+    color: white;
+}
+p {
+    color: white;
+}
+
+#wrapper {
+    background-color: #222;
+    width: 100%;
+}
+input[id="burgurmenu"] {
+    display: none;
+}
+.topbtn {
+    position: fixed;
+    font-size: 2em;
+    right: 3%;
+    bottom: 3%;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        width: 100%;
+        height: 60px;
+        z-index: 100;
+    }
+
+    /* 네비게이션 바 작업 */
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        width: 100%;
+        z-index: 100;
+        background-color: #222;
+        position: fixed;
+    }
+
+    #brand {
+        font-size: 2em;
+        color: white;
+        font-weight: bolder;
+        display: inline-block;
+        width: 15%;
+        text-align: center;
+    }
+
+    .maingnb {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        align-items: center;
+        height: 100%;
+        width: 80%;
+    }
+
+    .maingnb > li {
+        width: 14.285714%;
+        text-align: center;
+    }
+    .maingnb > li > a {
+        text-align: center;
+        color: white;
+        display: inline-block;
+    }
+
+    .down {
+        position: absolute;
+        text-align: center;
+        font-size: 1em;
+        background-color: #222;
+        top: 60px;
+        /* width: 150px; */
+        transition: 0.7s;
+        overflow: hidden;
+        width: 14.285714%;
+    }
+
+    .down li {
+        /* width: 100%; */
+
+        padding: 20px 0px;
+        text-align: center;
+    }
+
+    input[id="burgurmenu"] {
+        display: none;
+    }
+    /* 메인 투명도 조절 클래스*/
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+        display: block;
+        background-color: #222;
+        font-size: 0.8em;
+    }
+
+    .maingnb {
+        background-color: #222;
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .maingnb li {
+        padding: 20px;
+    }
+    #brand {
+        display: inline-block;
+        padding: 20px;
+        font-size: 1.3em;
+        font-weight: bolder;
+    }
+    .down {
+        display: none;
+    }
+
+    label[for="burgurmenu"] {
+        z-index: 100;
+        position: fixed;
+        display: block;
+        top: 20px;
+        right: 3%;
+        width: 30px;
+        height: 20px;
+    }
+    label[for="burgurmenu"] div {
+        width: 100%;
+        height: 4px;
+        background-color: rgb(230, 63, 63);
+        position: absolute;
+        transition: 0.4s;
+    }
+
+    label[for="burgurmenu"] div:nth-child(1) {
+        top: 0%;
+    }
+    label[for="burgurmenu"] div:nth-child(2) {
+        top: 50%;
+    }
+    label[for="burgurmenu"] div:nth-child(3) {
+        top: 100%;
+    }
+    input[id="burgurmenu"]:checked ~ label[for="burgurmenu"] div:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+    input[id="burgurmenu"]:checked ~ label[for="burgurmenu"] div:nth-child(2) {
+        opacity: 0;
+    }
+    input[id="burgurmenu"]:checked ~ label[for="burgurmenu"] div:nth-child(3) {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+    input[id="burgurmenu"]:checked ~ nav > .maingnb {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.opacity {
+    opacity: 0.2;
+    transition: 0.7s;
+}
+.opacityremove {
+    opacity: 1;
+    transition: 0.7s;
+}
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+        display: block;
+        background-color: #222;
+        font-size: 0.8em;
+    }
+
+    .maingnb {
+        background-color: #222;
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .maingnb li {
+        padding: 20px;
+    }
+    #brand {
+        display: inline-block;
+        padding: 20px;
+        font-size: 1.3em;
+        font-weight: bolder;
+    }
+    .down {
+        display: none;
+    }
+
+    label[for="burgurmenu"] {
+        z-index: 100;
+        position: fixed;
+        display: block;
+        top: 20px;
+        right: 3%;
+        width: 30px;
+        height: 20px;
+    }
+    label[for="burgurmenu"] div {
+        width: 100%;
+        height: 4px;
+        background-color: rgb(230, 63, 63);
+        position: absolute;
+        transition: 0.4s;
+    }
+
+    label[for="burgurmenu"] div:nth-child(1) {
+        top: 0%;
+    }
+    label[for="burgurmenu"] div:nth-child(2) {
+        top: 50%;
+    }
+    label[for="burgurmenu"] div:nth-child(3) {
+        top: 100%;
+    }
+    input[id="burgurmenu"]:checked ~ label[for="burgurmenu"] div:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+    input[id="burgurmenu"]:checked ~ label[for="burgurmenu"] div:nth-child(2) {
+        opacity: 0;
+    }
+    input[id="burgurmenu"]:checked ~ label[for="burgurmenu"] div:nth-child(3) {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+    input[id="burgurmenu"]:checked ~ nav > .maingnb {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.opacity {
+    opacity: 0.2;
+    transition: 0.7s;
+}
+.opacityremove {
+    opacity: 1;
+    transition: 0.7s;
+}

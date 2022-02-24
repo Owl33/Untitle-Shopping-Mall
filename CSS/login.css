@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+a {
+    color: white;
+}
+h1,
+h2 {
+    color: white;
+}
+p {
+    color: white;
+}
+#wrapper {
+    background-color: #222;
+    width: 100%;
+}
+main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section {
+    width: 25%;
+}
+main > section > a {
+    font-weight: bolder;
+    font-size: 7.5rem;
+}
+
+form {
+    margin-top: 30px;
+
+    width: 100%;
+}
+
+.signin input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+
+.loginbutton button {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 60px;
+    color: white;
+    background-color: black;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.accountforget a {
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 5px;
+}
+
+.accountforget a:last-child {
+    float: right;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    main {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    section {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    main > section > a {
+        font-weight: bolder;
+        font-size: 3rem;
+    }
+
+    form {
+        margin: auto;
+        margin-top: 30px;
+        width: 90%;
+    }
+    .accountforget {
+        text-align: left;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+    main {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    section {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    main > section > a {
+        font-weight: bolder;
+        font-size: 4.5rem;
+    }
+
+    form {
+        margin: auto;
+        margin-top: 30px;
+        width: 70%;
+    }
+    .accountforget {
+        text-align: left;
+    }
+}
