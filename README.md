@@ -1,4 +1,5 @@
-## Untitle-Shopping-Mall
+<h1 align="center"> Untitle-Shopping-Mall</h1>
+
 
 
 >Vanila JS를 기반으로 제작한 쇼핑몰 입니다. 평소 다크 모드를 사용하고, 어두운 색을 선호해서 
